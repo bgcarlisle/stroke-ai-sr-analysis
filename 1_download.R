@@ -10,11 +10,6 @@ if ( ! file.exists("output/")) {
     dir.create("output/")
 }
 
-## Make a folder to contain plots
-if ( ! file.exists("plots/")) {
-    dir.create("plots/")
-}
-
 ## Download extractions
 extractions <- read_tsv("https://numbat.bgcarlisle.com/stroke-ai/export/2021-12-17_062606-form_2-refset_6-extractions.tsv")
 extractions_result <- read_tsv("https://numbat.bgcarlisle.com/stroke-ai/export/2021-12-17_062625-table_results-refset_6-table-extraction.tsv")
